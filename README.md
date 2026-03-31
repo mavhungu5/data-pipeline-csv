@@ -18,5 +18,11 @@ Source:
 [View Dataset] ([https://www.kaggle.com/code/rohitsahoo/eda-superstore-dataset])
 Note: Dataset not uploaded due to size. Please download from the link above.
 
+## How to Use Dataset
+
+1. Download the dataset from the link above  
+2. Import into SQLite or your preferred database  
+3. Run queries from queries.sql
+
 ## Outcome
 Built a structured dataset ready for analysis.
