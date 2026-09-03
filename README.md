@@ -1,28 +1,13 @@
-# Data Pipeline (CSV to SQL)
+# Superstore CSV-to-SQL Data Cleaning & Ingestion Pipeline
 
-## Overview
-This project demonstrates a simple ETL pipeline using Python.
+An automated Python utility designed to standardize raw transactional CSV exports, handle missing data, and load sanitized schemas directly into a database environment.
 
-## Process
-- Extract: Load CSV data
-- Transform: Clean and standardize data
-- Load: Store in SQLite database
+## Pipeline Steps
+1. **Data Ingestion:** Reads raw `superstore.csv` files using Pandas.
+2. **Data Cleaning:** Drops null/missing records and programmatically normalizes column headers into standard lowercase `snake_case` naming conventions.
+3. **Database Loading:** Connects to an SQLite database (`pipeline.db`) and overwrites the target `clean_orders` table with clean, analysis-ready data.
 
-## Tools Used
-- Python (pandas)
-- SQLite
-
-## Dataset
-This project uses the Superstore dataset.
-Source:
-[View Dataset] ([https://www.kaggle.com/code/rohitsahoo/eda-superstore-dataset])
-Note: Dataset not uploaded due to size. Please download from the link above.
-
-## How to Use Dataset
-
-1. Download the dataset from the link above  
-2. Import into SQLite or your preferred database  
-3. Run queries from queries.sql
-
-## Outcome
-Built a structured dataset ready for analysis.
+## Tech Stack
+* **Language:** Python
+* **Libraries:** Pandas, SQLite3
+* **Database:** SQLite
